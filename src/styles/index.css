@@ -1,0 +1,99 @@
+/* Reset */
+@import './reset.css';
+/* CSS Modules */
+@import './menu.css';
+@import './contact.css';
+
+/* General */
+body {
+    background-image: url("../assets/image.jpg");
+    background-position: top;
+}
+
+body,
+button {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 0 .75rem;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem .75rem;
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Main Content */
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 1.5rem;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.main-content p,
+.main-content li {
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-size: cover;
+    }
+}
+
